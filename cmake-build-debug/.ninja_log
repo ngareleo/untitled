@@ -1,0 +1,7 @@
+# ninja log v5
+2	190	6691600036405590	CMakeFiles/untitled.dir/main.c.obj	d6bbe68a842c072
+3	158	6691707684362705	CMakeFiles/untitled.dir/src/main.c.obj	589059c00e894d7b
+158	365	6691707686371532	untitled.exe	4b483632ad3237cd
+6	320	6690430840349154	CMakeFiles/untitled.dir/insertion.c.obj	7348bdf5006c799f
+2	396	6691708447617717	build.ninja	15215738b4d747ba
+35	393	6691592127678286	CMakeFiles/untitled.dir/merge.c.obj	97ea16767d1ab658
