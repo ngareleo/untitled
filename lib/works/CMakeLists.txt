@@ -1,0 +1,1 @@
+add_library(works STATIC merge.h)

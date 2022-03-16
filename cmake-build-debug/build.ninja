@@ -109,6 +109,31 @@ build libbin.a: C_STATIC_LIBRARY_LINKER__bin_Debug
   TARGET_FILE = libbin.a
   TARGET_PDB = bin.a.dbg
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target works
+
+
+#############################################
+# Order-only phony target for works
+
+build cmake_object_order_depends_target_works: phony || CMakeFiles/works.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target works
+
+
+#############################################
+# Link the static library libworks.a
+
+build libworks.a: C_STATIC_LIBRARY_LINKER__works_Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\works.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libworks.a
+  TARGET_PDB = works.a.dbg
+
 
 #############################################
 # Utility command for rebuild_cache
@@ -128,6 +153,8 @@ build bin: phony libbin.a
 
 build untitled: phony untitled.exe
 
+build works: phony libworks.a
+
 # =============================================================================
 # Folder targets.
 
@@ -136,7 +163,7 @@ build untitled: phony untitled.exe
 #############################################
 # Folder: C:/Users/user/CLionProjects/untitled/cmake-build-debug
 
-build all: phony untitled.exe libbin.a
+build all: phony untitled.exe libbin.a libworks.a
 
 # =============================================================================
 # Built-in targets
